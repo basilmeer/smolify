@@ -1,0 +1,16 @@
+<div class="main-wrapper">
+  <div class="container text-center">
+    <h1 class="mb-5">Smolify</h1>
+    <div class="row justify-content-center">
+      <div class="col-5">
+        <%= form_with model: @url do |form| %>
+          <div class="input-group">
+            <%= form.text_field :name, class: 'form-control', placeholder: 'Enter your URL' %>
+            <%= form.submit 'Shorten', class: 'btn btn-outline-secondary' %>
+          </div>
+        <% end %>
+        <%= render partial: 'shared/flash' %>
+      </div>
+    </div>
+</div>
+</div>
